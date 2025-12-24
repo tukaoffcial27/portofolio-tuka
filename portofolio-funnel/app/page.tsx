@@ -1,6 +1,5 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-<meta name="google-site-verification" content="FggitfIA8_96oxup2XdbglzpDXcAJGfH4az4fKm2eRQ" />
 import Link from "next/link"; // PENTING: Import ini untuk navigasi antar halaman
 import { 
   ArrowRight, 
@@ -18,6 +17,7 @@ export const metadata: Metadata = {
   title: "Developer SaaS High-Performance", 
   description: "Solusi Full Stack Developer teruji. Spesialis Next.js, Website Headless, dan Aplikasi SaaS performa tinggi.",
 };
+<meta name="google-site-verification" content="FggitfIA8_96oxup2XdbglzpDXcAJGfH4az4fKm2eRQ" />
 
 export default function Home() {
   return (
