@@ -39,8 +39,13 @@ export default function PixofyProject() {
               <p className="text-slate-400">WebAssembly / Image Processing</p>
             </div>
              
-             {/* Link Website */}
-             <a href="#" className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full font-bold transition-all">
+             {/* Link Website: Diperbarui ke https://pixofy.app */}
+             <a 
+              href="https://pixofy.app" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full font-bold transition-all"
+             >
               Kunjungi Website <ExternalLink className="w-4 h-4" />
             </a>
           </div>
@@ -70,6 +75,21 @@ export default function PixofyProject() {
                   <CheckCircle2 className="text-emerald-500 w-5 h-5 flex-shrink-0" />
                   <span className="text-sm">Filter & Efek Real-time</span>
                 </div>
+                <div className="bg-slate-900/50 p-4 rounded-lg border border-slate-800 flex gap-3">
+                  <Zap className="text-amber-500 w-5 h-5 flex-shrink-0" />
+                  <span className="text-sm">Performa Tinggi WASM</span>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-bold text-white mb-4">Tech Stack</h3>
+              <div className="flex flex-wrap gap-3">
+                {["Next.js", "Rust", "WebAssembly", "Tailwind CSS", "TypeScript"].map((tech) => (
+                  <span key={tech} className="px-4 py-2 bg-slate-800 rounded-full text-sm text-slate-300 border border-slate-700">
+                    {tech}
+                  </span>
+                ))}
               </div>
             </section>
           </div>

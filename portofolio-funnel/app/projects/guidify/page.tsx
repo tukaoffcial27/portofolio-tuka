@@ -41,8 +41,13 @@ export default function GuidifyProject() {
               <p className="text-slate-400">SaaS / Productivity / Automation</p>
             </div>
             
-            {/* LINK WEBSITE: Ganti href="#" dengan URL asli jika ada */}
-            <a href="#" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-bold transition-all">
+            {/* LINK WEBSITE: Sudah diperbarui ke https://guidify.app */}
+            <a 
+              href="https://guidify.app" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-bold transition-all"
+            >
               Kunjungi Website <ExternalLink className="w-4 h-4" />
             </a>
           </div>
@@ -101,7 +106,7 @@ export default function GuidifyProject() {
         </div>
       </div>
 
-      {/* --- FOOTER (Sama seperti Home) --- */}
+      {/* --- FOOTER --- */}
       <footer className="pt-20 pb-10 bg-[#020617] border-t border-white/10 mt-auto">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">

@@ -4,11 +4,11 @@ import { ArrowLeft, CheckCircle2, ShoppingBag, ExternalLink } from "lucide-react
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tuka Store - Headless E-Commerce",
+  title: "Stefani Collection - Headless E-Commerce",
   description: "Membangun website toko online modern dengan arsitektur Headless dan integrasi Payment Gateway.",
 };
 
-export default function TukaStoreProject() {
+export default function StefaniProject() {
   return (
     <main className="min-h-screen bg-[#0f172a] text-slate-300 flex flex-col">
       
@@ -22,11 +22,11 @@ export default function TukaStoreProject() {
         </div>
       </nav>
 
-      {/* Header Image (Ungu) */}
+      {/* Header Image (Ungu/Violet) */}
       <div className="w-full h-[50vh] bg-gradient-to-br from-violet-600 to-violet-900 flex items-center justify-center relative mt-16">
         <div className="absolute inset-0 bg-black/20"></div>
         <h1 className="text-5xl md:text-7xl font-bold text-white relative z-10 drop-shadow-lg text-center px-4">
-          Tuka Store
+          Stefani Collection
         </h1>
       </div>
 
@@ -35,13 +35,18 @@ export default function TukaStoreProject() {
           
           <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-10 border-b border-slate-800 pb-10">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-2">Tuka Store</h2>
-              <p className="text-slate-400">E-Commerce / Headless / Payment Gateway</p>
+              <h2 className="text-3xl font-bold text-white mb-2">Stefani Collection</h2>
+              <p className="text-slate-400">E-Commerce / Fashion / Headless CMS</p>
             </div>
-            
-            {/* Link Website */}
-            <a href="#" className="flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-full font-bold transition-all">
-              Kunjungi Website <ExternalLink className="w-4 h-4" />
+             
+             {/* Link Website: Diperbarui ke https://stefanicollection.shop */}
+             <a 
+              href="https://stefanicollection.shop" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-full font-bold transition-all"
+             >
+              Kunjungi Toko <ExternalLink className="w-4 h-4" />
             </a>
           </div>
 
@@ -49,29 +54,41 @@ export default function TukaStoreProject() {
             <section>
               <h3 className="text-xl font-bold text-white mb-4">Tantangan</h3>
               <p className="leading-relaxed text-slate-400">
-                Toko online konvensional seringkali lambat saat trafik tinggi dan sulit dikustomisasi. 
-                Klien menginginkan toko online yang super cepat, bisa menampung ribuan produk, dan terintegrasi pembayaran otomatis.
+                Stefani Collection membutuhkan platform toko online yang sangat cepat, mobile-friendly, dan memiliki sistem manajemen stok yang terintegrasi. Platform e-commerce konvensional dirasa kurang fleksibel untuk kebutuhan branding mereka yang unik.
               </p>
             </section>
 
             <section>
-              <h3 className="text-xl font-bold text-white mb-4">Fitur Utama</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="text-violet-500 w-6 h-6 flex-shrink-0 mt-1" />
-                  <div>
-                    <strong className="text-white block">Headless Architecture</strong>
-                    <span className="text-sm text-slate-400">Frontend dan Backend terpisah membuat website loading di bawah 1 detik.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="text-violet-500 w-6 h-6 flex-shrink-0 mt-1" />
-                  <div>
-                    <strong className="text-white block">Payment Gateway</strong>
-                    <span className="text-sm text-slate-400">Otomatisasi pembayaran via Midtrans/Xendit (QRIS, VA, E-Wallet).</span>
-                  </div>
-                </li>
-              </ul>
+              <h3 className="text-xl font-bold text-white mb-4">Solusi Kami</h3>
+              <p className="leading-relaxed text-slate-400 mb-6">
+                Kami menerapkan arsitektur <strong>Headless Commerce</strong> menggunakan Next.js sebagai front-end dan CMS modern sebagai back-end. Ini memberikan performa loading yang instan dan SEO yang jauh lebih baik.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-slate-900/50 p-4 rounded-lg border border-slate-800 flex gap-3">
+                  <ShoppingBag className="text-violet-500 w-5 h-5 flex-shrink-0" />
+                  <span className="text-sm">Sistem Checkout Terintegrasi</span>
+                </div>
+                <div className="bg-slate-900/50 p-4 rounded-lg border border-slate-800 flex gap-3">
+                  <CheckCircle2 className="text-emerald-500 w-5 h-5 flex-shrink-0" />
+                  <span className="text-sm">Manajemen Inventori Otomatis</span>
+                </div>
+                <div className="bg-slate-900/50 p-4 rounded-lg border border-slate-800 flex gap-3">
+                  <CheckCircle2 className="text-emerald-500 w-5 h-5 flex-shrink-0" />
+                  <span className="text-sm">Integrasi Payment Gateway (Midtrans)</span>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-bold text-white mb-4">Tech Stack</h3>
+              <div className="flex flex-wrap gap-3">
+                {["Next.js", "Tailwind CSS", "Sanity CMS", "Stripe/Midtrans", "Framer Motion"].map((tech) => (
+                  <span key={tech} className="px-4 py-2 bg-slate-800 rounded-full text-sm text-slate-300 border border-slate-700">
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </section>
           </div>
         </div>
