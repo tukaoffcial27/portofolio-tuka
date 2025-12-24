@@ -14,10 +14,13 @@ import {
   Zap 
 } from "lucide-react";
 export const metadata: Metadata = {
+ 
   title: "Developer SaaS High-Performance", 
   description: "Solusi Full Stack Developer teruji. Spesialis Next.js, Website Headless, dan Aplikasi SaaS performa tinggi.",
+  verification: {
+    google: "FggitfIA8_96oxup2XdbglzpDXcAJGfH4az4fKm2eRQ",
+  },
 };
-<meta name="google-site-verification" content="FggitfIA8_96oxup2XdbglzpDXcAJGfH4az4fKm2eRQ" />
 
 export default function Home() {
   return (
