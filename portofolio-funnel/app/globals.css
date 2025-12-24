@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Di Tailwind v4, kita set warna dasar body langsung di sini.
+  Kode warna #0f172a adalah "Slate 900" (Biru Gelap Premium/Luxury).
+*/
+body {
+  background-color: #0f172a; 
+  color: #f8fafc; /* Warna teks putih gading */
+  font-family: var(--font-geist-sans), sans-serif;
+}
