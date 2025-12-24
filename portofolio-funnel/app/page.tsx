@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+<meta name="google-site-verification" content="FggitfIA8_96oxup2XdbglzpDXcAJGfH4az4fKm2eRQ" />
 import Link from "next/link"; // PENTING: Import ini untuk navigasi antar halaman
 import { 
   ArrowRight, 
