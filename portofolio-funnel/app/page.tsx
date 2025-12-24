@@ -76,7 +76,7 @@ export default function Home() {
           
           {/* Link ke Halaman Contact atau Langsung WA (Sesuai preferensi, di sini saya arahkan ke WA agar cepat) */}
           <a 
-            href="https://wa.me/628111870347"
+            href="https://wa.me/628118885567"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center px-8 py-4 text-base font-bold text-slate-300 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-all cursor-pointer"
